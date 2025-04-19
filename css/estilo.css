@@ -1,0 +1,227 @@
+body{
+	 background-image:url("../imagenes/fondoox.jpg");
+	 font-family:"tahoma","lucida console","courier new";
+     color:#1C2833;
+     font-size:40px;
+     text-align:center;
+}
+hr{
+	font-family:fuente-fee;
+	 border:3px solid #BA4A00;
+	 width:80%;
+	 border-radius:5px;
+}
+p{
+	font-family:fuente-fee;
+	 text-align:center;
+	 font-size:30px;
+	 color:#D35400;
+	 font-weight:bold;
+	 line-height:1.5;
+	 background-color:#FBFCFC;
+	 letter-spacing:2px;
+ }
+table,tr,td{
+	font-family:fuente-fee;
+	 border:1px solid #E74C3C;
+     border-spacing:0;
+     background-color:#FCF3CFf;
+    font-size:20px;
+    text-align:center;
+    font-weight:bold;
+}
+.pie{
+	 text-align:center;
+	 font-size:10px;
+	 font-weight:#FDFEFE;
+ }
+.encabezado{
+	text-align:center;
+	font-size:35px;
+    font-weight:bold;
+	color:#4A235A;
+ }
+div#top{
+	font-family:fuente-komi;
+   	width:100%;
+	height:75px;
+	background-image:linear-gradient(#BDABA7,#773729);
+ }
+div#ppag{
+	font-family:fuente-fee;
+	width:100%;
+	height:100px;
+	background-image:linear-gradient(#773729,#BDABA7);
+ }
+ /*carrousel de imagenes*/
+.carrousel{
+    width:600px;
+	margin:auto;
+	box-sizing:border-box;
+ }
+.contecarrousel{
+	width:100%;
+    height:400px;
+    overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+    width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+    height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+    position:absolute;
+    top:0;
+	bottom:0;
+    left:0; 
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows > i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller > a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows > a > i {
+	color:white;
+}
+/*cajas para productos*/
+.caja{
+	height:300px;
+	width:250px;
+	background:#eee;
+	border:1px solid #eee;
+	margin:5px;
+	color:black;
+    text-align:center;
+    display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px red;
+	transform:scale(1.3);
+}
+.caja-texto{
+    padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:blue;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.evolucionx{
+	padding-top:5px;
+	font-size:15px;
+	font-family:"arial";
+	text-align:center;
+	color:#b8491f;
+	background-color:white;
+	 border:1px solid #E74C3C;
+	height:130px;
+	width:700px;
+	border:1px solid #eee;
+	margin:5px;
+    text-align:center;
+    display:inline-block;
+}
+.navegacion{
+	font-family:fuente-fman;
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#fff;
+	font-weight:bold;
+	font-size:15px;
+	display:flex;
+	transition:flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	font-size:15px;
+	transition:transform 0.2s 0.2s;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#85C1E9;
+}
+.navegacion-item:nth-child(2){
+	background:#76D7C4;
+}
+.navegacion-item:nth-child(3){
+	background:#F9E79F;
+}
+.navegacion-item:nth-child(4){
+	background:#D7DBE2;
+}
+.cuadro {
+  text-align:center;
+  display: flex;
+  border: 5px solid #ccc;
+  padding: 50px;
+  max-width: 700px;
+  background-color:#76D7C4;
+}
+
+.imagen {
+  width: 250px;
+  height: 250px;
+  background-image: url(../IMAGENES/producto1.PNG);
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.texto {
+  font-size: 35px;
+}
+.navegacion-itemms{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+/*fuente de tipografis*/
+@font-face{
+	font-family:fuente-komi;
+	src: url(../fuentes/heycomic.ttf);
+}
+@font-face{
+	font-family:fuente-fman;
+	src: url(../fuentes/fman.ttf);
+}
+@font-face{
+	font-family:fuente-fee;
+	src: url(../fuentes/fee.ttf);
+}
